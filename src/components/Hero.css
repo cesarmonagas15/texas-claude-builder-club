@@ -1,0 +1,128 @@
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 120px 2rem 2rem;
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.hero-content {
+  max-width: 800px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 1.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.texas-text {
+  display: block;
+  background: linear-gradient(45deg, #BF2604, #FF6B35);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: -2px;
+}
+
+.claude-text {
+  display: block;
+  color: #2d3748;
+  font-size: 0.8em;
+  letter-spacing: -1px;
+  margin-top: -0.2em;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  color: #4a5568;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.floating-star {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.6;
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.5));
+}
+
+.floating-star:nth-child(1) {
+  top: 20%;
+  left: 15%;
+}
+
+.star-2 {
+  top: 60%;
+  right: 20%;
+}
+
+.star-3 {
+  top: 30%;
+  right: 10%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 100px 1rem 2rem;
+    min-height: 90vh;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-buttons .btn-primary,
+  .hero-buttons .btn-secondary {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .floating-star {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-section {
+    padding: 90px 1rem 1rem;
+  }
+
+  .texas-text {
+    letter-spacing: -1px;
+  }
+
+  .claude-text {
+    letter-spacing: 0;
+  }
+}
