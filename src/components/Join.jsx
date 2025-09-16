@@ -33,7 +33,7 @@ const Join = () => {
           viewport={{ once: true }}
         >
           <iframe
-            src="https://forms.gle/9MtP5SQrruyu18LN8"
+            src="https://forms.gle/LAswH7D1hzMP5GPR7"
             width="100%"
             height="800"
             frameBorder="0"
@@ -51,7 +51,7 @@ const Join = () => {
           >
             <p>Can't see the form?</p>
             <a
-              href="https://forms.gle/9MtP5SQrruyu18LN8"
+              href="https://forms.gle/LAswH7D1hzMP5GPR7"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
